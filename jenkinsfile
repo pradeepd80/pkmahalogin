@@ -1,11 +1,11 @@
 node{
     
-stage('for clone java code') {
+stage('configuration service java code') {
     git branch: 'main', url: 'https://github.com/pradeepd80/pkmahalogin.git'
 }
 
 
-stage('execute maven target') {
+stage('configuration maven target') {
     sh 'mvn install'
 }
     
